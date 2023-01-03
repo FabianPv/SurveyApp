@@ -1,0 +1,32 @@
+version: "3.9"
+services:
+  pgdb:
+    image: postgres:latest
+    restart: always
+    volumes:
+      - pgdb:/var/lib/postgresql/psqldata
+    environment:
+      POSTGRES_USERNAME: postgres
+      POSTGRES_PASSWORD: password
+      PGDATA: /var/lib/postgresql/psqldata
+
+  redis:
+    image: "redis:latest"
+    ports:
+      - "6379:6379"
+
+  web:
+    build: .
+    command: bash -c "rm -f tmp/pids/server.pid && bundle exec rails s -p 3000 -b '0.0.0.0'"
+    volumes:
+      - .:/surveys_app
+    ports:
+      - "3000:3000"
+    depends_on:
+      - pgdb
+      - redis
+    environment:
+      - REDIS_URL=redis://redis:6379/
+
+volumes:
+  pgdb:
