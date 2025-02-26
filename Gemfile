@@ -44,6 +44,8 @@ gem "bootsnap", require: false
 
 gem 'tailwindcss-rails', '~> 2.0', '>= 2.0.21'
 
+gem "devise"
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 

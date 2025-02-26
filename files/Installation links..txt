@@ -1,0 +1,7 @@
+WSL link: https://docs.microsoft.com/es-es/windows/wsl/install
+
+Docker-DigitalOcean: https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04-es
+
+Docker-Ubuntu: https://docs.docker.com/engine/install/ubuntu/
+
+Docker-Rails: https://docs.docker.com/samples/rails/

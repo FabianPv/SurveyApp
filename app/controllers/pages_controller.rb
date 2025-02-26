@@ -2,6 +2,6 @@ class PagesController < ApplicationController
   def index
   end
 
-  def laindg_page
+  def landing_page
   end
 end

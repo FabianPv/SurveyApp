@@ -1,0 +1,34 @@
+Font Awesome.
+
+./bin/importmap pin @fortawesome/fontawesome-free @fortawesome/fontawesome-svg-core @fortawesome/free-brands-svg-icons @fortawesome/free-regular-svg-icons @fortawesome/free-solid-svg-icons
+
+<i class="fa-solid fa-house-user"></i>
+
+import {far} from "@fortawesome/free-regular-svg-icons"
+import {fas} from "@fortawesome/free-solid-svg-icons"
+import {fab} from "@fortawesome/free-brands-svg-icons"
+import {library} from "@fortawesome/fontawesome-svg-core"
+import "@fortawesome/fontawesome-free"
+library.add(far, fas, fab)
+
+Sections and Surveys.
+
+<i class="fa-solid fa-house"></i>
+<i class="fa-solid fa-list-check"></i>
+<i class="fa-solid fa-square-poll-horizontal"></i>
+<i class="fa-solid fa-folder-open"></i>
+
+Options.
+
+<i class="fa-sharp fa-solid fa-font"></i>
+<i class="fa-solid fa-list"></i>
+<i class="fa-sharp fa-solid fa-9"></i>
+
+Surveys. 
+
+<i class="fas fa-share"></i>
+<i class="fas fa-cloud-download"></i>
+<i class="fas fa-users"></i>
+
+<i class="fas fa-arrow-circle-up"></i>
+<i class="fas fa-arrow-circle-down"></i>
